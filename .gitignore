@@ -1,0 +1,46 @@
+# Unity generated content
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+MemoryCaptures/
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.apk
+*.aab
+*.keystore
+*.jks
+# Data and media stay local
+Recordings/
+recordings/
+outputs/
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+# SDKs and third-party recorder are installed separately
+unity-overlay/Packages/PICO-Unity-Integration-SDK-*/
+unity-overlay/Assets/Plugins/NatML/
+*.so
+*.dll
+*.aar
+# Local credentials and account state
+.env
+.env.*
+*credentials*.json
+PicoSdkPCConfig.json
+UnityConnectSettings.asset
+# Python and macOS
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
