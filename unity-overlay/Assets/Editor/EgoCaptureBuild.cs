@@ -32,7 +32,7 @@ public static class EgoCaptureBuild
 
         PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "org.local.picoegotracker");
         PlayerSettings.productName = "PICO EgoTracker";
-        PlayerSettings.bundleVersion = "2.2.0";
+        PlayerSettings.bundleVersion = "1.0";
         PlayerSettings.Android.bundleVersionCode = 20;
         PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;

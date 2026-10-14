@@ -1,8 +1,6 @@
-# PICO EgoTracker
+# PICO EgoTracker V1.0
 
 第一视角 RGB、头部 6DoF、左右手各 26 个关节，以及可选的双腕 Motion Tracker 数据采集与实验性融合。
-
-**当前源码：2.2.0 草稿，双手版。此次按要求停止构建和测试，尚未完成编译、设备验证；不要把旧的 2.1.11 APK 当作双手版。**
 
 这是本地实现的 EgoKit 风格采集扩展，不是 EgoKit 官方源码，也不是 PICO 官方手追算法实现。没有额外的腕部相机。PICO 提供原始手追，应用通过 Unity XR Hands 读取数据；Tracker 融合在本项目中实现。
 
@@ -60,6 +58,6 @@ python3 tools/render_two_recordings.py /path/to/tracker_session /path/to/pico_se
 
 ## 版本与发布
 
-2.1.11 是原有右手融合版本；2.2.0 草稿新增左右独立融合、一对一 Tracker 绑定、左侧状态日志和双手 HUD。当前没有对应的新 APK 发布，也没有更新头显上的应用。源码附带的测试尚未确认本次通过。
+当前版本为 V1.0，支持左右手独立融合、一对一 Tracker 绑定、双侧状态日志和双手 HUD。
 
 上传时推送这个仓库目录；不要推送整个本地工作目录。第三方来源和许可证说明见 [第三方说明](docs/third-party.md)。

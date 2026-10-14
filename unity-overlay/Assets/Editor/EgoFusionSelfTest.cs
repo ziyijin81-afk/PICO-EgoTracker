@@ -341,7 +341,7 @@ public static class EgoFusionSelfTest
         using (var poses = new StreamWriter(Path.Combine(output, "poses_fused.txt")))
         using (var status = new StreamWriter(Path.Combine(output, "fusion_status.txt")))
         {
-            poses.WriteLine("# Offline replay through wrist proximity pairing and EgoWristFusion 2.1.11; original recording unchanged");
+            poses.WriteLine("# Offline replay through wrist proximity pairing and EgoWristFusion V1.0; original recording unchanged");
             status.WriteLine("# idx t_ms source calibration_samples calibration_frozen offset_xyz tracker_to_wrist_xyzw selected_tracker_id");
             foreach (string line in File.ReadLines(Path.Combine(directory, "poses.txt")))
             {

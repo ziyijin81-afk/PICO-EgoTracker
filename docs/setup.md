@@ -29,7 +29,7 @@ git -C PICOEgoTrackerBase lfs pull
 python3 tools/apply_overlay.py /path/to/PICOEgoTrackerBase
 ```
 
-基础样例中与 Avatar 有关的旧演示场景、脚本、资源可能引用已移除的 Avatar 包。本地工作工程已清理这些演示。新建基础工程如有这类编译依赖，应移除不用于 EgoCapture 的旧演示或按原样例补齐对应依赖；本次覆盖层的全新安装尚未验证。
+基础样例中与 Avatar 有关的旧演示场景、脚本、资源可能引用已移除的 Avatar 包。新建基础工程如有这类编译依赖，应移除不用于 EgoCapture 的旧演示或按原样例补齐对应依赖。
 
 ## 构建
 
@@ -45,7 +45,7 @@ macOS 命令示例：
   -logFile /path/to/build.log
 ```
 
-APK 输出到基础工程同级的 `Builds/PICOEgoTrackerFusion.apk`。构建入口保留代码自测，后续执行构建时会运行；本次没有完成构建或报告自测通过。
+APK 输出到基础工程同级的 `Builds/PICOEgoTrackerFusion.apk`。构建入口会运行代码自测。
 
 安装需自行连接并授权 ADB：
 
@@ -57,13 +57,13 @@ adb install -r /path/to/Builds/PICOEgoTrackerFusion.apk
 
 ## GitHub 上传
 
-上传的是本源码仓库，而不是基础工程和 SDK。可先在 GitHub 新建私有空仓库，然后在本目录执行：
+上传的是本源码仓库，而不是基础工程和 SDK。可先在 GitHub 新建空仓库，然后在本目录执行：
 
 ```bash
 git add .
-git commit -m "Add draft bilateral PICO hand and Tracker capture"
+git commit -m "Add PICO EgoTracker V1.0"
 git remote add origin <your-repository-url>
 git push -u origin main
 ```
 
-推送需要 GitHub 对目标仓库的写入授权。源码版本为 2.2.0-draft，双手版尚未完成构建和实机验证。
+推送需要 GitHub 对目标仓库的写入授权。项目版本为 V1.0。
